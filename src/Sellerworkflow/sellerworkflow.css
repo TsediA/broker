@@ -1,0 +1,101 @@
+/* SellerWorkflow.css */
+.seller-workflow-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  background-image: url('../assets/house8.png'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh; /* Ensure it covers the full height */
+  color: #fff; /* Change text color for better contrast */
+  position: relative;
+  z-index: 1;
+}
+
+.seller-workflow-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for improved text readability */
+  z-index: -1; /* Place behind the content */
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.section-title {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: #007bff; /* Section title color */
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form-field input,
+.form-field textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #fff; /* White background for inputs */
+  color: #333; /* Dark text for inputs */
+}
+
+.form-field textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-field label {
+  margin-bottom: 0.5rem; /* Move label above input */
+}
+
+.offer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  color: #333; /* Dark text for offers */
+}
+
+.primary-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.secondary-btn {
+  background-color: #fff;
+  color: #007bff;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.primary-btn:hover,
+.secondary-btn:hover {
+  opacity: 0.8;
+}

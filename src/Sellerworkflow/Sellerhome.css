@@ -1,0 +1,8 @@
+/* SellerDashboard.css */
+.sellercomponents {
+    background-image: url('../../assets/background-images1.jpg'); /* Correct path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full height of the viewport */
+    width: 100%; /* Full width */
+  }

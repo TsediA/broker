@@ -1,0 +1,147 @@
+.rent-page {
+  padding: 2rem;
+}
+
+.sort-options {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1.5rem;
+}
+
+.sort-options label {
+  margin-right: 0.5rem;
+}
+
+.rental-listings {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+}
+
+.rental-card {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.rental-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.rental-details {
+  padding: 1rem;
+}
+
+.rental-details h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.rental-details p {
+  margin-bottom: 1rem;
+}
+
+.details-btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.details-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Buyer workflow container styling */
+.buyer-workflow-container {
+  padding: 20px;
+}
+
+.property-section {
+  margin-bottom: 20px;
+}
+
+.property-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px 0;
+}
+
+.property-images {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Modal styling */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  max-height: 80%;
+  overflow-y: auto; /* Allows scrolling */
+  padding: 20px;
+}
+
+.close {
+  cursor: pointer;
+  font-size: 20px;
+  float: right;
+}
+
+/* Property images display in rows of 3 */
+.propertyrent-images {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.property-images-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+/* Notification styling */
+.notification {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+}
+
+.primary-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  background-color: #0056b3;
+}
+
+.clear-btn {
+  margin-top: 10px;
+}

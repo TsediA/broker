@@ -1,0 +1,73 @@
+.notification-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  .back-btn {
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #007bff;
+    margin-bottom: 20px;
+    align-self: flex-start;
+  }
+  
+  h2.section-title {
+    font-size: 2em;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .loading {
+    font-size: 1.2em;
+    color: #666;
+  }
+  
+  .no-notifications {
+    font-size: 1.2em;
+    color: #666;
+  }
+  
+  .notification-list {
+    width: 100%;
+  }
+  
+  .notification {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    width: 100%;
+  }
+  
+  .clear-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #dc3545; /* Red */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 20px;
+  }
+  
+  .clear-btn:hover {
+    background-color: #c82333; /* Darker Red */
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 600px) {
+    h2.section-title {
+      font-size: 1.5em;
+    }
+  
+    .clear-btn {
+      font-size: 0.9em;
+    }
+  }

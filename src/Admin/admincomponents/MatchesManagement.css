@@ -1,0 +1,67 @@
+/* MatchesManagement.css */
+
+.matches-management-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #333; /* Dark text for readability */
+  }
+  
+  .back-btn {
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #007bff; /* Bootstrap primary color */
+    transition: color 0.3s ease;
+  }
+  
+  .back-btn:hover {
+    color: #0056b3; /* Darker blue on hover */
+  }
+  
+  h1, h2 {
+    margin-bottom: 20px;
+    color: #333; /* Dark color for headings */
+    text-align: center; /* Centered headings */
+    font-family: 'Arial', sans-serif; /* Consistent font */
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #ddd; /* Light border for table cells */
+    padding: 12px 16px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f8f9fa; /* Light gray for table headers */
+    color: #333; /* Dark text for headers */
+    font-weight: bold; /* Bold headers */
+  }
+  
+  td {
+    background-color: #fff; /* White background for cells */
+    color: #555; /* Slightly lighter text color */
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light gray for even rows */
+  }
+  
+  tr:hover {
+    background-color: #e9ecef; /* Light gray on hover for rows */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  
+  /* Media query for responsive design */
+  @media (max-width: 768px) {
+    th, td {
+      padding: 10px;
+      font-size: 14px;
+    }
+ }

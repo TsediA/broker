@@ -1,0 +1,85 @@
+.home-page-container {
+  position: relative;
+  overflow: hidden; /* Prevents scrollbars on the main container */
+}
+
+.background-image {
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../assets/background-image3.jpg'); /* Correct path */
+  background-size: cover; /* Ensure the image covers the entire element */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  z-index: 1;
+  opacity: 0.;
+}
+
+.content {
+  padding: 20px;
+  background-color: #fff;
+  margin: 0 auto;
+
+}
+
+.property-section {
+  margin-top: 20px;
+}
+
+.property-list {
+  overflow-y: auto; /* Enable scrolling for the property list */
+  border: 1px solid #ccc; /* Optional: for visual separation */
+  padding: 10px;
+  display: grid;
+  gap: 1rem;
+
+}
+
+@media (min-width: 600px) {
+  .property-list  { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 900px) {
+  .property-list  { grid-template-columns: repeat(3, 1fr); }
+}
+
+.property-card {
+  border: 1px solid #e0e0e0;
+  padding: 15px;
+  max-width: 400px;
+  
+  margin-bottom: 10px;
+  border-radius: 4px;
+  background-color: #f9f9f9; /* Light background for each property card */
+}
+.property-images {
+  width: 40rem; /* Full width of the card */
+  height: 15rem; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners for images */
+  object-fit: cover; /* Cover the area without distortion */
+  margin-bottom: 12px; /* Space between image and text */
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 500px;
+}
+
+.close {
+  cursor: pointer;
+  float: right;
+  font-size: 20px;
+}

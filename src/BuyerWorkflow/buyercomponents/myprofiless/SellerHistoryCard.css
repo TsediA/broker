@@ -1,0 +1,55 @@
+/* SellerHistoryCard.css */
+
+.my-profile-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    transition: box-shadow 0.3s;
+  }
+  
+  .my-profile-card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .my-profile-card-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .my-profile-card-icon {
+    font-size: 30px;
+    color: #007bff;
+    margin-right: 10px;
+  }
+  
+  .my-profile-card-title {
+    font-size: 20px;
+    margin: 0;
+    color: #333;
+  }
+  
+  .my-profile-card-description {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .seller-history-list {
+    margin-top: 15px;
+  }
+  
+  .seller-history-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .seller-history-item h4 {
+    margin: 0;
+    color: #007bff;
+  }
+  
+  .seller-history-item p {
+    margin: 5px 0;
+    color: #555;
+  }

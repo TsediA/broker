@@ -1,0 +1,14 @@
+.payment-section {
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .notification {
+    color: red; /* Notification color */
+    margin-bottom: 10px;
+  }

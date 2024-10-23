@@ -1,0 +1,86 @@
+/* ProfilePages.css */
+.my-profile-container {
+  padding: 20px;
+  background-image: url('../../assets/house5.png'); /* Replace with your image path */
+  background-size: cover; /* Ensure the image covers the entire container */
+  background-position: center; /* Center the image */
+  min-height: 100vh; /* Ensure it covers the full height */
+  color: #fff; /* Change text color for better contrast */
+  position: relative;
+  z-index: 1;
+}
+
+.my-profile-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for improved text readability */
+  z-index: -1; /* Place behind the content */
+}
+
+.my-profile-title {
+  font-size: 2rem;
+  color: #fff; /* Change title color for better visibility */
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for better readability */
+}
+
+.my-profile-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.my-profile-card {
+  background: rgba(255, 255, 255, 0.507); /* Slightly transparent white for cards */
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.071);
+  transition: transform 0.2s, box-shadow 0.2s;
+  overflow: hidden;
+  text-align: center;
+}
+
+.my-profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.my-profile-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.my-profile-card-content {
+  padding: 20px;
+}
+
+.my-profile-card-icon {
+  font-size: 40px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.my-profile-card-title {
+  font-size: 1.5rem;
+  color: #333; /* Dark color for titles */
+  margin: 10px 0;
+}
+
+.my-profile-card-description {
+  font-size: 1rem;
+  color: #666; /* Slightly lighter color for descriptions */
+}
+
+@media (max-width: 768px) {
+  .my-profile-title {
+      font-size: 1.5rem; /* Adjust title size for smaller screens */
+  }
+
+  .my-profile-card-icon {
+      font-size: 30px; /* Adjust icon size for smaller screens */
+  }
+}

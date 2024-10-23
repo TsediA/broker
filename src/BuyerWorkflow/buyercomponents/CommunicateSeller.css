@@ -1,0 +1,81 @@
+.communicate-seller-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  .back-btn {
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #007bff;
+    margin-bottom: 20px;
+    align-self: flex-start;
+  }
+  
+  h2 {
+    font-size: 2em;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .notification {
+    margin: 10px 0;
+    color: #007bff; /* Green for notifications */
+    font-weight: bold;
+  }
+  
+  .form-group {
+    margin: 15px 0;
+    width: 100%;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+  }
+  
+  input:focus, textarea:focus, select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .primary-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #007bff; /* Green */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 20px;
+  }
+  
+  .primary-btn:hover {
+    background-color: #007bff; /* Darker Green */
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 600px) {
+    h2 {
+      font-size: 1.0em;
+    }
+  
+    .primary-btn {
+      font-size: 0.5em;
+    }
+  }

@@ -1,0 +1,41 @@
+.my-profile-card {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.back-btn {
+  cursor: pointer;
+  color: #007bff; /* Bootstrap primary color */
+  margin-bottom: 10px;
+}
+
+.loading-message, .error-message {
+  text-align: center;
+  color: #ff0000; /* Red for errors */
+}
+
+.buyer-history-list {
+  margin-top: 20px;
+}
+
+.buyer-history-item {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+.buyer-history-item h4 {
+  margin: 0;
+  color: #333;
+}
+
+.buyer-history-item p {
+  margin: 5px 0;
+}
